@@ -1,0 +1,5 @@
+# _config.yml
+title: "My Awesome Blog"
+description: "用 GitHub Pages + Jekyll 搭建的博客"
+theme: jekyll-theme-cayman  
+markdown: kramdown
