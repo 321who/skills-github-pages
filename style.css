@@ -150,6 +150,52 @@ section p {
   margin: auto;
 }
 
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h4 {
+  color: #ffa500;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.skill-category li:last-child {
+  border-bottom: none;
+}
+
 /* 项目卡片 */
 .projects-container {
   display: grid;
@@ -177,6 +223,22 @@ section p {
 .project-card p {
   margin: 0 1rem 1rem;
   font-size: 1rem;
+}
+
+.project-tech {
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #ffa500;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem 0.3rem 0.2rem 0;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 /* 项目画廊 */
@@ -225,6 +287,20 @@ section p {
   font-size: 1rem;
 }
 
+.blog-tags {
+  margin: 1rem 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #e0e0e0;
+  color: #666;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem 0.3rem 0.2rem 0;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
 /* 联系信息 */
 .contact-info {
   list-style: none;
@@ -242,6 +318,47 @@ section p {
 }
 .contact-info a:hover {
   color: #e69500;
+}
+
+/* 联系表单 */
+.contact-form {
+  max-width: 500px;
+  margin: 3rem auto 0;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffa500;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
 }
 
 /* 页脚 */
@@ -285,4 +402,43 @@ body.dark-mode .blog-post {
 }
 body.dark-mode .dropdown .dropdown-content {
   background: #333;
+}
+
+/* 暗黑模式下的技能区域 */
+body.dark-mode .skill-category {
+  background: #1e1e1e;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .skill-category li {
+  border-color: #333;
+  color: #ccc;
+}
+
+/* 暗黑模式下的联系表单 */
+body.dark-mode .contact-form {
+  background: #1e1e1e;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .contact-form h3 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #333;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  border-color: #bb86fc;
+}
+
+/* 暗黑模式下的标签 */
+body.dark-mode .tag {
+  background: #444;
+  color: #ccc;
 }
