@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">我的主页</div>
+      <ul class="nav-links">
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#timeline">经历</a></li>
+        <li class="dropdown">
+          <a href="#projects" class="dropbtn">项目 &#x25BC;</a>
+          <div class="dropdown-content">
+            <a href="#projects">项目展示</a>
+            <a href="#project-gallery">项目画廊</a>
+          </div>
+        </li>
+        <li><a href="#testimonials">评价</a></li>
+        <li><a href="#blog">博客</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button id="toggle-dark-mode">切换主题</button>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>欢迎来到我的个人主页</h1>
+      <p>探索我的项目、博客与更多精彩内容</p>
+      <a href="#about" class="btn">了解我</a>
+    </div>
+  </section>
+
+  <section id="about" class="animate-on-scroll">
+    <h2>关于我</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>我是一个充满激情的全栈开发者，热爱创新与挑战。拥有多年的前端和后端开发经验，致力于打造高质量、安全、易用的应用。</p>
+        <p>我专注于现代Web技术，包括React、Vue.js、Node.js等，同时对AI/ML、云计算和DevOps有深入的了解。我相信技术能够改变世界，并努力通过代码创造价值。</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">完成项目</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">年经验</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">客户好评</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="animate-on-scroll">
+    <h2>技能专长</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>前端开发</h3>
+        <div class="skill-item">
+          <span class="skill-name">React/Vue.js</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="95"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">JavaScript/TypeScript</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">HTML5/CSS3</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="95"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>后端开发</h3>
+        <div class="skill-item">
+          <span class="skill-name">Node.js</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">数据库</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>工具与平台</h3>
+        <div class="skill-item">
+          <span class="skill-name">Git/GitHub</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Docker</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">AWS/云服务</span>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="animate-on-scroll">
+    <h2>工作经历</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-date">2023 - 现在</div>
+        <div class="timeline-content">
+          <h3>高级全栈开发工程师</h3>
+          <h4>科技创新公司</h4>
+          <p>负责大型Web应用的架构设计和开发，带领团队完成多个关键项目，提升系统性能30%以上。</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-date">2021 - 2023</div>
+        <div class="timeline-content">
+          <h3>全栈开发工程师</h3>
+          <h4>互联网科技公司</h4>
+          <p>参与多个前端和后端项目的开发，掌握现代Web技术栈，积累了丰富的项目经验。</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-date">2019 - 2021</div>
+        <div class="timeline-content">
+          <h3>前端开发工程师</h3>
+          <h4>软件开发公司</h4>
+          <p>专注于用户界面开发，学习并掌握了React、Vue等前端框架，为后续全栈发展奠定基础。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="animate-on-scroll">
+    <h2>我的项目</h2>
+    <div class="project-filters">
+      <button class="filter-btn active" onclick="filterProjects('all')">全部</button>
+      <button class="filter-btn" onclick="filterProjects('web')">Web应用</button>
+      <button class="filter-btn" onclick="filterProjects('mobile')">移动应用</button>
+      <button class="filter-btn" onclick="filterProjects('ai')">AI/ML</button>
+    </div>
+    <div class="projects-container">
+      <article id="project1" class="project-card" data-category="web">
+        <img src="https://via.placeholder.com/400x250/4CAF50/ffffff?text=E-Commerce+Platform" alt="电商平台">
+        <div class="project-content">
+          <h3>智能电商平台</h3>
+          <p>基于React和Node.js构建的现代化电商平台，集成AI推荐系统，提升用户购物体验。</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">查看演示</a>
+            <a href="#" class="btn-small">GitHub</a>
+          </div>
+        </div>
+      </article>
+      
+      <article id="project2" class="project-card" data-category="ai">
+        <img src="https://via.placeholder.com/400x250/2196F3/ffffff?text=AI+Chat+Assistant" alt="AI聊天助手">
+        <div class="project-content">
+          <h3>AI智能聊天助手</h3>
+          <p>利用自然语言处理技术开发的智能对话系统，支持多语言交互和情感分析。</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Flask</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">查看演示</a>
+            <a href="#" class="btn-small">GitHub</a>
+          </div>
+        </div>
+      </article>
+      
+      <article id="project3" class="project-card" data-category="mobile">
+        <img src="https://via.placeholder.com/400x250/FF9800/ffffff?text=Task+Manager+App" alt="任务管理应用">
+        <div class="project-content">
+          <h3>智能任务管理器</h3>
+          <p>跨平台移动应用，支持团队协作、时间追踪和智能提醒功能。</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Redux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">查看演示</a>
+            <a href="#" class="btn-small">GitHub</a>
+          </div>
+        </div>
+      </article>
+      
+      <article id="project4" class="project-card" data-category="web">
+        <img src="https://via.placeholder.com/400x250/9C27B0/ffffff?text=Portfolio+Website" alt="作品集网站">
+        <div class="project-content">
+          <h3>响应式作品集网站</h3>
+          <p>采用现代设计理念和最新Web技术构建的个人作品展示平台。</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">SCSS</span>
+            <span class="tag">Webpack</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">查看演示</a>
+            <a href="#" class="btn-small">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="project-gallery">
+    <h2>项目画廊</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片1">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片2">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片3">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片4">
+      <!-- 可添加更多图片 -->
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>博客</h2>
+    <div class="blog-container">
+      <article class="blog-post">
+        <h3>博客文章标题1</h3>
+        <small>2025-04-01</small>
+        <p>这是一篇关于最新技术动态与开发心得的博客文章，欢迎阅读和交流。</p>
+        <a href="#" class="btn">阅读全文</a>
+      </article>
+      <article class="blog-post">
+        <h3>博客文章标题2</h3>
+        <small>2025-03-20</small>
+        <p>分享一些在开发过程中遇到的问题及解决方案，帮助你更好地理解前沿技术。</p>
+        <a href="#" class="btn">阅读全文</a>
+      </article>
+      <!-- 更多博客文章可以在此扩展 -->
+    </div>
+  </section>
+
+  <section id="testimonials" class="animate-on-scroll">
+    <h2>客户评价</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>"321who是一位非常专业的开发者，不仅技术过硬，而且沟通能力强。我们的项目在他的帮助下提前完成，质量也超出了预期。"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/FFC107/000000?text=A" alt="客户头像">
+          <div class="author-info">
+            <h4>张先生</h4>
+            <span>科技公司CEO</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>"合作过程中，321who展现出了极强的问题解决能力和创新思维。他开发的系统运行稳定，用户体验优秀。"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/E91E63/ffffff?text=B" alt="客户头像">
+          <div class="author-info">
+            <h4>李女士</h4>
+            <span>产品经理</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>"项目交付及时，代码质量高，后期维护也很到位。321who是值得信赖的技术合作伙伴。"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/4CAF50/ffffff?text=C" alt="客户头像">
+          <div class="author-info">
+            <h4>王总</h4>
+            <span>创业公司创始人</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="animate-on-scroll">
+    <h2>联系我</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>联系方式</h3>
+        <p>如果你对我的工作感兴趣，或有任何建议和合作意向，请通过以下方式联系我：</p>
+        <ul class="contact-list">
+          <li>
+            <i class="icon">📧</i>
+            <a href="mailto:example@example.com">example@example.com</a>
+          </li>
+          <li>
+            <i class="icon">💼</i>
+            <a href="https://github.com/321who" target="_blank">GitHub: 321who</a>
+          </li>
+          <li>
+            <i class="icon">🔗</i>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <i class="icon">📱</i>
+            <span>微信: your_wechat_id</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="contact-form">
+        <h3>发送消息</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="您的姓名" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="主题">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="您的消息" required></textarea>
+          </div>
+          <button type="submit" class="btn">发送消息</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 321who. 保留所有权利.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
