@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">我的主页</div>
+      <ul class="nav-links">
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li class="dropdown">
+          <a href="#projects" class="dropbtn">项目 &#x25BC;</a>
+          <div class="dropdown-content">
+            <a href="#project1">项目1</a>
+            <a href="#project2">项目2</a>
+            <a href="#project-gallery">画廊</a>
+          </div>
+        </li>
+        <li><a href="#blog">博客</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button id="toggle-dark-mode">切换主题</button>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>欢迎来到我的个人主页</h1>
+      <p>探索我的项目、博客与更多精彩内容</p>
+      <a href="#about" class="btn">了解我</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>关于我</h2>
+    <div class="about-content">
+      <p>我是一个充满热情的全栈开发者，热爱创新与挑战。拥有多年的前端和后端开发经验，致力于打造高质量、安全、易用的应用。</p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>前端技术</h4>
+          <ul>
+            <li>HTML5 / CSS3 / JavaScript</li>
+            <li>React / Vue.js / Angular</li>
+            <li>TypeScript / Webpack</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>后端技术</h4>
+          <ul>
+            <li>Node.js / Python / Java</li>
+            <li>Express / Django / Spring</li>
+            <li>MySQL / MongoDB / Redis</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>开发工具</h4>
+          <ul>
+            <li>Git / GitHub / GitLab</li>
+            <li>Docker / Kubernetes</li>
+            <li>AWS / Azure / 腾讯云</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>我的项目</h2>
+    <div class="projects-container">
+      <article id="project1" class="project-card">
+        <img src="https://via.placeholder.com/400x250/4CAF50/white?text=Web应用" alt="全栈Web应用">
+        <h3>智能任务管理系统</h3>
+        <p>一个基于React和Node.js的全栈任务管理应用，具有实时协作、智能提醒、数据可视化等功能。采用现代化的UI设计和响应式布局。</p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+        </div>
+      </article>
+      <article id="project2" class="project-card">
+        <img src="https://via.placeholder.com/400x250/2196F3/white?text=移动应用" alt="移动应用开发">
+        <h3>社交学习平台</h3>
+        <p>一款创新的社交学习移动应用，结合了在线课程、讨论社区、进度跟踪等功能。使用最新的移动开发技术，提供流畅的用户体验。</p>
+        <div class="project-tech">
+          <span class="tech-tag">Vue.js</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+      </article>
+      <!-- 更多项目卡片可以在此扩展 -->
+    </div>
+  </section>
+
+  <section id="project-gallery">
+    <h2>项目画廊</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片1">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片2">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片3">
+      <img src="https://via.placeholder.com/300x200" alt="画廊图片4">
+      <!-- 可添加更多图片 -->
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>博客</h2>
+    <div class="blog-container">
+      <article class="blog-post">
+        <h3>现代Web开发最佳实践</h3>
+        <small>2025-01-15</small>
+        <p>探讨现代Web开发中的最佳实践，包括性能优化、安全性考虑、可访问性设计等重要议题。分享实际项目中的经验和解决方案。</p>
+        <div class="blog-tags">
+          <span class="tag">Web开发</span>
+          <span class="tag">性能优化</span>
+          <span class="tag">最佳实践</span>
+        </div>
+        <a href="#" class="btn">阅读全文</a>
+      </article>
+      <article class="blog-post">
+        <h3>JavaScript异步编程深入解析</h3>
+        <small>2025-01-08</small>
+        <p>深入讲解JavaScript中的异步编程概念，从回调函数到Promise，再到async/await，帮助开发者更好地掌握异步编程技巧。</p>
+        <div class="blog-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">异步编程</span>
+          <span class="tag">Promise</span>
+        </div>
+        <a href="#" class="btn">阅读全文</a>
+      </article>
+      <article class="blog-post">
+        <h3>云原生应用开发指南</h3>
+        <small>2024-12-28</small>
+        <p>介绍云原生应用开发的核心概念、技术栈选择和部署策略。分享容器化、微服务架构以及DevOps实践的实际经验。</p>
+        <div class="blog-tags">
+          <span class="tag">云原生</span>
+          <span class="tag">Docker</span>
+          <span class="tag">微服务</span>
+        </div>
+        <a href="#" class="btn">阅读全文</a>
+      </article>
+      <!-- 更多博客文章可以在此扩展 -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系我</h2>
+    <p>如果你对我的工作感兴趣，或有任何建议和合作意向，请通过以下方式联系我：</p>
+    <ul class="contact-info">
+      <li>📧 Email: <a href="mailto:developer@321who.com">developer@321who.com</a></li>
+      <li>💼 GitHub: <a href="https://github.com/321who" target="_blank">@321who</a></li>
+      <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/321who" target="_blank">专业档案</a></li>
+      <li>📱 微信: developer321who</li>
+      <li>🌐 个人网站: <a href="https://321who.github.io" target="_blank">321who.github.io</a></li>
+    </ul>
+    <div class="contact-form">
+      <h3>快速联系</h3>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="您的姓名" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="邮箱地址" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="留言内容" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">发送消息</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 321who. 保留所有权利.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
